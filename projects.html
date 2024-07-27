@@ -109,14 +109,23 @@
                 обсудить ваш следующий проект и как мы можем
                 помочь. Не стесняйтесь и получите свою консультацию уже сейчас!</p>
             <div class="feedback-content-btns">
-                <button class="write-us">Написать</button>
-                <button class="call-us">Позвонить</button>
+                <button class="write-us"><span>Написать</span></button>
+                <button class="call-us"><span>Позвонить</span></button>
             </div>
         </div>
+        <span class="call-text">Контакты директора</span>
         <p class="rules">Все права защищены Труд, 2024 год.</p>
     </div>
 </section>
+<script>
+    document.querySelector('.write-us').addEventListener('click', function() {
+        window.location = 'mailto:ooopsktrud@yandex.ru';
+    });
 
+    document.querySelector('.call-us').addEventListener('click', function() {
+        window.location = 'tel:+79063107973';
+    });
+</script>
 <script src="scripts/script.js"></script>
 </body>
 </html>
