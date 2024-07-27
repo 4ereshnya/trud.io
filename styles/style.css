@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -359,6 +360,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .features-flex-box3-right-item {
@@ -369,6 +372,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .features-flex-box3-left-item > p {
@@ -431,6 +436,7 @@ nav {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+    font-weight: bold;
 }
 
 .call-us {
@@ -439,6 +445,7 @@ nav {
     background-color: #586F7C;
     border: none;
     color: #FFFFFF;
+    font-weight: bold;
     text-align: center;
     font-size: 17px;
     padding: 16px;
@@ -471,6 +478,29 @@ nav {
 .write-us:hover span:after, .call-us:hover span:after, .projects_btn:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+.mail-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.call-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.call-text {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    color: var(--white-color);
+    font-family: 'Work Sans',sans-serif;
+    text-align: center;
+    opacity: 0.5;
+    margin: 0 auto;
 }
 .rules {
     margin: 0 auto;
@@ -659,11 +689,11 @@ nav {
         }
         .feedback-content-btns {
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
             width: 100%;
         }
-        .write-us, .call-us {
+        .write-us, .call-us, .mail-form, .call-form {
             width: 94%;
             height: 60px;
             font-size: 20px;
