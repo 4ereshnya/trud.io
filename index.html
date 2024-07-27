@@ -15,8 +15,8 @@
             <nav class="navbar">
                 <p class="header_text">Труд – Электромонтажные Работы</p>
                 <div class="navbar__links">
-                    <a href="#" class="navbar__links-text">Проекты</a>
-                    <a href="#" class="navbar__links-text">Контакты</a>
+                    <a href="projects.html" class="navbar__links-text">Проекты</a>
+                    <a href="#contacts" class="navbar__links-text">Контакты</a>
                 </div>
 
             </nav>
@@ -100,7 +100,7 @@
             </div>
         </div>
     </section>
-    <section class="feedback">
+    <section class="feedback" id="contacts">
         <div class="container">
             <div class="feedback-content">
                 <p class="feedback-content-header">Связаться Сейчас</p>
@@ -108,14 +108,26 @@
                     обсудить ваш следующий проект и как мы можем
                     помочь. Не стесняйтесь и получите свою консультацию уже сейчас!</p>
                 <div class="feedback-content-btns">
-                    <button class="write-us"><span>Написать</span></button>
-                    <button class="call-us"><span>Позвонить</span></button>
+                        <button class="write-us"><span>Написать</span></button>
+                        <button class="call-us"><span>Позвонить</span></button>
                 </div>
+
             </div>
+            <span class="call-text">Контакты директора</span>
 
             <p class="rules">Все права защищены Труд, 2024 год.</p>
         </div>
     </section>
 </section>
+<script>
+    document.querySelector('.write-us').addEventListener('click', function() {
+        window.location = 'mailto:example@example.com';
+    });
+
+    document.querySelector('.call-us').addEventListener('click', function() {
+        window.location = 'tel:+1234567890';
+    });
+</script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
